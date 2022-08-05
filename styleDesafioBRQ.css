@@ -118,7 +118,6 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
     text-align: center;
     color: #FEFEFE;
     line-height: 40px;
@@ -208,10 +207,9 @@ footer{
     border-radius: 5px;
 }
 
-.rodapeContato{
+.conteudoRodapeContato{
     display: none;
 }
-
 
 
 @media (max-width:768px){
@@ -264,8 +262,10 @@ footer{
     .Dados textarea{
         border: 1px solid var(--primario);
         border-radius: 5px;
-        width: 260px;
-        height: 125px;
+        max-width: 260px;
+        min-width: 260px;
+        max-height: 125px;
+        min-height: 125px;
     }
 
     .caixa2{
@@ -342,18 +342,30 @@ footer{
     .caixa2{
         display: none;
     }
+
     footer{
         display: flex;
         align-items: center;
+        justify-content: center;
         margin-top: 75px;
         max-width: 100%;
         background-color: var(--primario);
         height: 120px;
     }
     
-    .rodapeContato{
+    .conteudoRodape{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: #FEFEFE;
+        line-height: 30px;
+    }
+    
+    .conteudoRodapeContato{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         text-align: center;
         color: #FEFEFE;
         line-height: 30px;
