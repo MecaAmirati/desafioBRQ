@@ -1,0 +1,359 @@
+:root{
+    --primario: #660027;
+    --secundario: #6C6969;
+    --terciario: #7D7777;
+    --paragrafoTamanho: 15px;
+    --paragrafoH1: 35px;
+    --paragrafoH2: 25px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background: #FFFFFF;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+}
+
+main{
+    width: 1200px;
+    margin: auto;
+}
+
+.cabecalho{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    justify-content: space-between;
+}
+
+.cabecalhoMenu ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.cabecalhoMenuItem{
+    color: black;
+}
+
+.cabecalhoImagem{
+    align-items: flex-start;
+}
+
+.conteudoPrincipalImagem{
+    margin-top: 50px;
+}
+
+.conteudoPrincipalTitulo{
+    margin-top: 25px;
+    font-size: var(--paragrafoH1);
+    color: var(--primario);
+}
+
+.conteudoPrincipalParagrafo{
+    margin-top: 20px;
+    color: var(--secundario);
+    font-size: var(--paragrafoTamanho);
+}
+
+.conteudoCards{
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    border: 1px solid var(--secundario);
+    width: 250px;
+    height: 410px;
+}
+
+.card h2{
+    font-size: var(--paragrafoH2);
+    color: var(--primario);
+    margin-top: 5px;
+}
+
+.card p{
+    margin-top: 20px ;
+    font-size: var(--paragrafoTamanho);
+    color: var(--terciario);
+}
+
+.content-text{
+    padding: 30px;
+}
+
+.cardBotao{
+    margin-top: 20px;
+}
+
+.cardBotao{
+    width: 130px;
+    height: 40px;
+    margin-top: 30px;
+    border: 2px solid;
+    border-radius: 5px;
+    color: var(--primario);
+    font-size: var(--paragrafoTamanho);
+    border-color: var(--primario);
+}
+
+footer{
+    margin-top: 75px;
+    max-width: 100%;
+    background-color: var(--primario);
+    height: 130px;
+}
+
+.conteudoRodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    text-align: center;
+    color: #FEFEFE;
+    line-height: 40px;
+}
+
+.caixas section{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.caixas{
+    height: 780px;
+}
+
+.caixa1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 780px;
+    height: 700px;
+    border: 1px solid var(--primario);
+    border-radius: 5px;
+}
+
+.caixa2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 700px;
+    border: 1px solid var(--primario);
+    border-radius: 5px;
+    background-color: var(--primario);
+}
+
+.caixa2 p{
+    width: 400px;
+    height: 115px;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 45px;
+}
+
+.caixas h1{
+    text-align: center;
+    margin-top: 45px;
+    color: var(--primario);
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.Dados{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 400px;
+    height: 550px;
+    font-size: var(--paragrafoH2);
+}
+
+.Dados input{
+    border: 1px solid var(--primario);
+    border-radius: 5px;
+    height: 40px;
+}
+
+.Dados textarea{
+    border: 1px solid var(--primario);
+    border-radius: 5px;
+    width: 400px;
+    height: 125px;
+}
+
+.Dados button{
+    width: 130px;
+    height: 45px;
+    font-size: 24px;
+    background-color: var(--primario);
+    color: white;
+    border-radius: 5px;
+}
+
+.rodapeContato{
+    display: none;
+}
+
+
+
+@media (max-width:768px){
+    .cabecalho{
+        width: 595px;
+    }
+    .conteudo{
+        width: 595px;
+    }
+
+    .conteudoCards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .conteudoPrincipalImagem{
+        display: none;
+    }
+
+    .caixas{
+        width: 700px;
+        height: 800px;
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .caixa1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 320px;
+        height: 700px;
+        border: 1px solid var(--primario);
+        border-radius: 5px;
+    }
+
+    .Dados{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        width: 260px;
+        height: 550px;
+        font-size: var(--paragrafoH2);
+    }
+
+    .Dados textarea{
+        border: 1px solid var(--primario);
+        border-radius: 5px;
+        width: 260px;
+        height: 125px;
+    }
+
+    .caixa2{
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 256px;
+        height: 700px;
+        border: 1px solid var(--primario);
+        border-radius: 5px;
+        background-color: var(--primario);
+    }
+
+    .caixa2 p{
+        width: 234px;
+        height: 78px;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        line-height: 45px;
+    }
+    
+}
+
+@media (max-width:360px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    .cabecalho{
+        width: 155px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .cabecalhoMenu{
+        display: flex;
+        align-items: flex-start;
+
+    }
+
+    .cabecalhoMenu ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .conteudo{
+        width: 320px;
+
+    }
+
+    .conteudoCards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caixas{
+        width: 320px;
+        height: auto;
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .caixa2{
+        display: none;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        margin-top: 75px;
+        max-width: 100%;
+        background-color: var(--primario);
+        height: 120px;
+    }
+    
+    .rodapeContato{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: #FEFEFE;
+        line-height: 30px;
+    }
+}
