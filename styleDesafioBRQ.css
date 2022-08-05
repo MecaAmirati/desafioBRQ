@@ -118,6 +118,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 30px;
     text-align: center;
     color: #FEFEFE;
     line-height: 40px;
@@ -205,6 +206,10 @@ footer{
     background-color: var(--primario);
     color: white;
     border-radius: 5px;
+}
+
+.footerConteudoRodapeContato{
+    display: none;
 }
 
 .conteudoRodapeContato{
@@ -352,8 +357,19 @@ footer{
         background-color: var(--primario);
         height: 120px;
     }
+
+    .footerConteudoRodapeContato{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 75px;
+        max-width: 100%;
+        background-color: var(--primario);
+        height: 120px;
+    }
     
     .conteudoRodape{
+        padding-top: 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
