@@ -193,8 +193,10 @@ footer{
 .Dados textarea{
     border: 1px solid var(--primario);
     border-radius: 5px;
-    width: 400px;
-    height: 125px;
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 125px;
+    min-height: 125px;
 }
 
 .Dados button{
